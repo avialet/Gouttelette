@@ -1,17 +1,2 @@
-# Dependencies
 node_modules/
-site/node_modules/
-
-# Build artifacts
-build/
-
-# macOS
 .DS_Store
-*.dmg
-
-# Claude
-.claude/
-
-# Misc
-*.swp
-*~

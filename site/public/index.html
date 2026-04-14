@@ -3,25 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gouttelette — Votre vide-poche visuel pour macOS</title>
-  <meta name="description" content="Glissez un fichier vers le haut de votre écran. Gouttelette le garde pour vous, prêt à être déposé ailleurs. macOS, gratuit.">
+  <title>Gouttelette — Un fichier temporaire, accroché au bord.</title>
+  <meta name="description" content="Gouttelette est une app macOS qui accroche un fichier temporaire au bord de votre écran pour un drag & drop différé.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=1">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+
   <!-- Nav -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
       <a href="#hero" class="nav-logo">
-        <div class="nav-drop-icon"></div>
+        <div class="nav-blob-icon"></div>
         <span>Gouttelette</span>
       </a>
       <div class="nav-links">
-        <a href="#features" class="nav-link">Fonctionnalités</a>
-        <a href="#demo" class="nav-link">Comment ça marche</a>
-        <a href="#download" class="nav-cta">Télécharger</a>
+        <a href="#download" class="nav-cta">Bientôt disponible</a>
       </div>
     </div>
   </nav>
@@ -30,28 +29,34 @@
   <section class="hero" id="hero">
     <div class="hero-glow"></div>
     <div class="hero-content">
-      <div class="drop-container" id="hero-drop">
-        <div class="drop-shape"></div>
-        <div class="drop-pulse-ring"></div>
-        <div class="drop-pulse-ring ring-2"></div>
+      <div class="hero-visual" id="hero-blob">
+      <div class="visual-gouttelette">
+        <div class="goutte-screen">
+          <div class="screen-content-g">
+            <div class="sc-line"></div>
+            <div class="sc-line short"></div>
+          </div>
+        </div>
+        <div class="goutte-drop">
+          <div class="drop-shape">
+            <div class="drop-file">📄</div>
+          </div>
+          <div class="drop-shadow"></div>
+        </div>
       </div>
+    </div>
       <h1 class="hero-title" id="hero-title">
         <span class="title-gradient">Gouttelette</span>
       </h1>
       <p class="hero-tagline" id="hero-tagline">
-        Votre vide-poche en haut de l'écran.<br>
-        <span class="tagline-highlight">Glissez. Accrochez. Relâchez.</span>
+        Un fichier temporaire, accroché au bord.<br>
+        <span class="tagline-highlight">Glissez. Accrochez. Lâchez plus tard.</span>
       </p>
       <div class="hero-cta-group" id="hero-cta">
-        <a href="/download" class="btn btn-primary">
-          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-            <polyline points="7 10 12 15 17 10"/>
-            <line x1="12" y1="15" x2="12" y2="3"/>
-          </svg>
-          Télécharger pour macOS
-        </a>
-        <p class="hero-meta">macOS 13+ · Apple Silicon · Gratuit</p>
+        <span class="btn btn-primary btn-disabled">
+          Bientôt disponible
+        </span>
+        <p class="hero-meta">macOS 13+ · Apple Silicon & Intel · Gratuit</p>
       </div>
     </div>
     <div class="scroll-indicator" id="scroll-indicator">
@@ -59,145 +64,24 @@
     </div>
   </section>
 
+
   <!-- Features -->
   <section class="features" id="features">
-    <div class="features-line-wrap">
-      <div class="features-line" id="features-line"></div>
-    </div>
-    <div class="section-inner">
-      <div class="section-header">
-        <p class="section-label" id="features-label">Fonctionnalités</p>
-        <h2 class="section-title" id="features-title">Simple. Fluide.<br>Temporaire.</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">💧</div>
+        <h3 class="feature-title">Accrochage magnétique</h3>
+        <p class="feature-desc">Glissez un fichier vers le bord de l'écran et il s'accroche tout seul, sous forme de petite goutte flottante.</p>
       </div>
-      <div class="features-grid" id="features-grid">
-        <div class="feature-card" data-feature="0">
-          <div class="feature-card-glow"></div>
-          <div class="feature-number">01</div>
-          <div class="feature-icon-wrap">
-            <span class="feature-icon">🎯</span>
-          </div>
-          <h3>Drag & drop universel</h3>
-          <p>Fonctionne avec tout : fichiers, texte, images, couleurs. Depuis n'importe quelle application.</p>
-          <div class="feature-tag">Compatible</div>
-        </div>
-        <div class="feature-card" data-feature="1">
-          <div class="feature-card-glow"></div>
-          <div class="feature-number">02</div>
-          <div class="feature-icon-wrap">
-            <span class="feature-icon">💧</span>
-          </div>
-          <h3>Gouttelettes vivantes</h3>
-          <p>Chaque élément devient une bulle organique accrochée au bord, avec un morphing fluide et un halo lumineux.</p>
-          <div class="feature-tag">Animation</div>
-        </div>
-        <div class="feature-card" data-feature="2">
-          <div class="feature-card-glow"></div>
-          <div class="feature-number">03</div>
-          <div class="feature-icon-wrap">
-            <span class="feature-icon">⏱️</span>
-          </div>
-          <h3>Évaporation auto</h3>
-          <p>Les gouttelettes s'évaporent après un délai configurable. 5 min, 15 min ou 1 heure.</p>
-          <div class="feature-tag">Nettoyage</div>
-        </div>
-        <div class="feature-card" data-feature="3">
-          <div class="feature-card-glow"></div>
-          <div class="feature-number">04</div>
-          <div class="feature-icon-wrap">
-            <span class="feature-icon">🏝️</span>
-          </div>
-          <h3>Zone Dynamic Island</h3>
-          <p>Glissez vers le haut de l'écran — un blob organique s'illumine pour guider votre dépôt.</p>
-          <div class="feature-tag">Intuitif</div>
-        </div>
-        <div class="feature-card" data-feature="4">
-          <div class="feature-card-glow"></div>
-          <div class="feature-number">05</div>
-          <div class="feature-icon-wrap">
-            <span class="feature-icon">✨</span>
-          </div>
-          <h3>Effet d'attraction</h3>
-          <p>Un halo cyan s'allume quand vous approchez du bord pendant un drag. Guidage visuel instantané.</p>
-          <div class="feature-tag">Feedback</div>
-        </div>
-        <div class="feature-card" data-feature="5">
-          <div class="feature-card-glow"></div>
-          <div class="feature-number">06</div>
-          <div class="feature-icon-wrap">
-            <span class="feature-icon">🪶</span>
-          </div>
-          <h3>Ultra léger</h3>
-          <p>Application native Swift. Pas d'Electron, pas de framework lourd. Se fait oublier dans la menu bar.</p>
-          <div class="feature-tag">Performance</div>
-        </div>
+      <div class="feature-card">
+        <div class="feature-icon">⏱</div>
+        <h3 class="feature-title">Stockage temporaire</h3>
+        <p class="feature-desc">La gouttelette reste visible le temps nécessaire. Lâchez-la dans n'importe quelle app quand vous êtes prêt.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- Demo -->
-  <section class="demo" id="demo">
-    <div class="section-inner">
-      <div class="section-header">
-        <p class="section-label" id="demo-label">Comment ça marche</p>
-        <h2 class="section-title" id="demo-title">Glissez. C'est tout.</h2>
-      </div>
-      <div class="demo-flow" id="demo-flow">
-        <div class="demo-step" data-step="0">
-          <div class="demo-step-number">1</div>
-          <div class="demo-step-visual">
-            <div class="demo-drag-visual-up">
-              <div class="demo-top-line"></div>
-              <div class="demo-arrow-up">↑</div>
-              <div class="demo-mini-file">📄</div>
-            </div>
-          </div>
-          <h3>Glissez vers le haut</h3>
-          <p>Depuis n'importe quelle app</p>
-        </div>
-        <div class="demo-connector">
-          <svg viewBox="0 0 80 20" class="connector-svg">
-            <path d="M0 10 Q40 10 80 10" stroke="url(#connGrad1)" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
-            <defs>
-              <linearGradient id="connGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#00BCD4" stop-opacity="0.5"/>
-                <stop offset="100%" stop-color="#0097A7" stop-opacity="0.5"/>
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-        <div class="demo-step" data-step="1">
-          <div class="demo-step-number">2</div>
-          <div class="demo-step-visual">
-            <div class="demo-droplet-mini">
-              <div class="mini-droplet"></div>
-              <div class="mini-droplet-glow"></div>
-            </div>
-          </div>
-          <h3>Ça s'accroche</h3>
-          <p>Une gouttelette apparaît en haut de l'écran</p>
-        </div>
-        <div class="demo-connector">
-          <svg viewBox="0 0 80 20" class="connector-svg">
-            <path d="M0 10 Q40 10 80 10" stroke="url(#connGrad2)" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
-            <defs>
-              <linearGradient id="connGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#00BCD4" stop-opacity="0.5"/>
-                <stop offset="100%" stop-color="#0097A7" stop-opacity="0.5"/>
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-        <div class="demo-step" data-step="2">
-          <div class="demo-step-number">3</div>
-          <div class="demo-step-visual">
-            <div class="demo-burst-visual">
-              <div class="burst-circle"></div>
-              <div class="burst-target">📧</div>
-            </div>
-          </div>
-          <h3>Relâchez ailleurs</h3>
-          <p>La gouttelette éclate, contenu transféré</p>
-        </div>
+      <div class="feature-card">
+        <div class="feature-icon">✨</div>
+        <h3 class="feature-title">Animation fluide</h3>
+        <p class="feature-desc">Des micro-animations physiques donnent vie à la goutte : rebond, oscillation, fusion au lâcher.</p>
       </div>
     </div>
   </section>
@@ -207,47 +91,30 @@
     <div class="section-inner">
       <div class="download-card" id="download-card">
         <div class="download-glow"></div>
-        <h2 class="download-title">Prêt à accrocher&nbsp;?</h2>
-        <p class="download-desc">Téléchargez Gouttelette et transformez le haut de votre écran en vide-poche.</p>
-        <a href="/download" class="btn btn-primary btn-large">
-          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-            <polyline points="7 10 12 15 17 10"/>
-            <line x1="12" y1="15" x2="12" y2="3"/>
-          </svg>
-          Télécharger Gouttelette
-        </a>
+        <h2 class="download-title">Un fichier en suspens</h2>
+        <p class="download-desc">Gouttelette arrive bientôt. Le drag & drop réinventé pour macOS.</p>
+        <span class="btn btn-primary btn-large btn-disabled">
+          Bientôt disponible
+        </span>
         <div class="download-meta">
-          <span class="download-badge">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="badge-icon">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
-              <path d="M8 12l3 3 5-5"/>
-            </svg>
-            macOS 13+
-          </span>
-          <span class="download-badge">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="badge-icon">
-              <rect x="4" y="4" width="16" height="16" rx="2"/>
-              <path d="M9 9h6v6H9z"/>
-            </svg>
-            Apple Silicon
-          </span>
+          <span class="download-badge">macOS 13+</span>
+          <span class="download-badge">Apple Silicon & Intel</span>
           <span class="download-badge">Gratuit</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Support -->
+  <!-- Support / Amazon -->
   <section class="support" id="support">
     <div class="section-inner">
       <div class="support-card" id="support-card">
         <div class="support-icon">🎁</div>
         <h2 class="support-title">Un petit geste ?</h2>
         <p class="support-desc">
-          Gouttelette est gratuit et le restera. Si l'app vous plaît et que l'envie se fait sentir, vous pouvez jeter un œil à ma liste de souhaits Amazon. Rien d'obligatoire, juste un moyen sympa de soutenir le projet.
+          Gouttelette est gratuit et le restera. Si l'app vous plait et que l'envie se fait sentir, vous pouvez jeter un oeil à ma liste de souhaits Amazon. Rien d'obligatoire, juste un moyen sympa de soutenir le projet.
         </p>
-        <a href="https://www.amazon.fr/hz/wishlist/ls/3QFCGBSNKMYHO" target="_blank" rel="noopener noreferrer" class="btn btn-support">
+        <a href="https://www.amazon.fr/registries/gl/guest-view/3EQGMKFGHSYAL" target="_blank" rel="noopener noreferrer" class="btn btn-support">
           <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
           </svg>
@@ -261,19 +128,18 @@
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <div class="nav-drop-icon small"></div>
+        <div class="nav-blob-icon small"></div>
         <span class="footer-name">Gouttelette</span>
       </div>
       <p class="footer-credit">
-        Créé par <a href="https://www.linkedin.com/in/aurelien-vialet-a9834b/" target="_blank" rel="noopener noreferrer"><strong>Aurélien Vialet</strong></a> — Fait avec ❤️
+        Créé par <a href="https://www.linkedin.com/in/aurelien-vialet-a9834b/" target="_blank" rel="noopener noreferrer"><strong>Aurélien Vialet</strong></a> — Fait avec soin pour macOS.
       </p>
     </div>
   </footer>
 
-  <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
-  <script src="script.js?v=1"></script>
+  <script src="/js/main.js"></script>
 </body>
 </html>
