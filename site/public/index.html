@@ -20,7 +20,14 @@
         <span>Gouttelette</span>
       </a>
       <div class="nav-links">
-        <a href="#download" class="nav-cta">Bientôt disponible</a>
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="fr">FR</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="de">DE</button>
+          <button class="lang-btn" data-lang="it">IT</button>
+          <button class="lang-btn" data-lang="es">ES</button>
+        </div>
+        <a href="#download" class="nav-cta" data-i18n="nav.cta">Télécharger</a>
       </div>
     </div>
   </nav>
@@ -46,17 +53,17 @@
       </div>
     </div>
       <h1 class="hero-title" id="hero-title">
-        <span class="title-gradient">Gouttelette</span>
+        <span class="title-gradient" data-i18n="hero.title">Gouttelette</span>
       </h1>
-      <p class="hero-tagline" id="hero-tagline">
+      <p class="hero-tagline" id="hero-tagline" data-i18n="hero.tagline">
         Un fichier temporaire, accroché au bord.<br>
         <span class="tagline-highlight">Glissez. Accrochez. Lâchez plus tard.</span>
       </p>
       <div class="hero-cta-group" id="hero-cta">
-        <span class="btn btn-primary btn-disabled">
-          Bientôt disponible
-        </span>
-        <p class="hero-meta">macOS 13+ · Apple Silicon & Intel · Gratuit</p>
+        <a href="#download" class="btn btn-primary" data-i18n="hero.cta">
+          Télécharger gratuitement
+        </a>
+        <p class="hero-meta" data-i18n="hero.meta">macOS 13+ · Apple Silicon · Gratuit</p>
       </div>
     </div>
     <div class="scroll-indicator" id="scroll-indicator">
@@ -64,24 +71,23 @@
     </div>
   </section>
 
-
   <!-- Features -->
   <section class="features" id="features">
     <div class="features-grid">
       <div class="feature-card">
         <div class="feature-icon">💧</div>
-        <h3 class="feature-title">Accrochage magnétique</h3>
-        <p class="feature-desc">Glissez un fichier vers le bord de l'écran et il s'accroche tout seul, sous forme de petite goutte flottante.</p>
+        <h3 class="feature-title" data-i18n="features.1.title">Accrochage magnétique</h3>
+        <p class="feature-desc" data-i18n="features.1.desc">Glissez un fichier vers le bord de l'écran et il s'accroche tout seul, sous forme de petite goutte flottante.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">⏱</div>
-        <h3 class="feature-title">Stockage temporaire</h3>
-        <p class="feature-desc">La gouttelette reste visible le temps nécessaire. Lâchez-la dans n'importe quelle app quand vous êtes prêt.</p>
+        <h3 class="feature-title" data-i18n="features.2.title">Stockage temporaire</h3>
+        <p class="feature-desc" data-i18n="features.2.desc">La gouttelette reste visible le temps nécessaire. Lâchez-la dans n'importe quelle app quand vous êtes prêt.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">✨</div>
-        <h3 class="feature-title">Animation fluide</h3>
-        <p class="feature-desc">Des micro-animations physiques donnent vie à la goutte : rebond, oscillation, fusion au lâcher.</p>
+        <h3 class="feature-title" data-i18n="features.3.title">Animation fluide</h3>
+        <p class="feature-desc" data-i18n="features.3.desc">Des micro-animations physiques donnent vie à la goutte : rebond, oscillation, fusion au lâcher.</p>
       </div>
     </div>
   </section>
@@ -91,15 +97,16 @@
     <div class="section-inner">
       <div class="download-card" id="download-card">
         <div class="download-glow"></div>
-        <h2 class="download-title">Un fichier en suspens</h2>
-        <p class="download-desc">Gouttelette arrive bientôt. Le drag & drop réinventé pour macOS.</p>
-        <span class="btn btn-primary btn-large btn-disabled">
-          Bientôt disponible
-        </span>
+        <h2 class="download-title" data-i18n="download.title">Un fichier en suspens</h2>
+        <p class="download-desc" data-i18n="download.desc">Gouttelette accroche vos fichiers au bord de l'écran. Léger, fluide, et gratuit.</p>
+        <a href="/download/Gouttelette-1.0.0.dmg" class="btn btn-primary btn-large" data-i18n="download.cta">
+          Télécharger Gouttelette
+        </a>
         <div class="download-meta">
-          <span class="download-badge">macOS 13+</span>
-          <span class="download-badge">Apple Silicon & Intel</span>
-          <span class="download-badge">Gratuit</span>
+          <span class="download-badge" data-i18n="download.badge.os">macOS 13+</span>
+          <span class="download-badge" data-i18n="download.badge.arch">Apple Silicon</span>
+          <span class="download-badge" data-i18n="download.badge.price">Gratuit</span>
+          <span class="download-badge" data-i18n="download.badge.size">280 Ko</span>
         </div>
       </div>
     </div>
@@ -110,15 +117,15 @@
     <div class="section-inner">
       <div class="support-card" id="support-card">
         <div class="support-icon">🎁</div>
-        <h2 class="support-title">Un petit geste ?</h2>
-        <p class="support-desc">
-          Gouttelette est gratuit et le restera. Si l'app vous plait et que l'envie se fait sentir, vous pouvez jeter un oeil à ma liste de souhaits Amazon. Rien d'obligatoire, juste un moyen sympa de soutenir le projet.
+        <h2 class="support-title" data-i18n="support.title">Un petit geste ?</h2>
+        <p class="support-desc" data-i18n="support.desc">
+          Gouttelette est gratuit et le restera. Si l'app vous plaît, vous pouvez jeter un œil à ma liste de souhaits Amazon. Rien d'obligatoire, juste un moyen sympa de soutenir le projet.
         </p>
         <a href="https://www.amazon.fr/registries/gl/guest-view/3EQGMKFGHSYAL" target="_blank" rel="noopener noreferrer" class="btn btn-support">
           <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
           </svg>
-          Voir ma liste de souhaits
+          <span data-i18n="support.cta">Voir ma liste de souhaits</span>
         </a>
       </div>
     </div>
@@ -131,7 +138,7 @@
         <div class="nav-blob-icon small"></div>
         <span class="footer-name">Gouttelette</span>
       </div>
-      <p class="footer-credit">
+      <p class="footer-credit" data-i18n="footer.credit">
         Créé par <a href="https://www.linkedin.com/in/aurelien-vialet-a9834b/" target="_blank" rel="noopener noreferrer"><strong>Aurélien Vialet</strong></a> — Fait avec soin pour macOS.
       </p>
     </div>
@@ -140,6 +147,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <script src="/js/i18n.js"></script>
   <script src="/js/main.js"></script>
 </body>
 </html>

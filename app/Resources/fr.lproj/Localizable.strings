@@ -1,0 +1,4 @@
+"gouttelette.activeCount" = "Gouttelettes actives : %d";
+"gouttelette.removeAll" = "Supprimer toutes les gouttelettes";
+"gouttelette.settings" = "Paramètres…";
+"gouttelette.launchAtLogin" = "Ouvrir au démarrage";

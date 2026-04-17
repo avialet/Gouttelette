@@ -1,0 +1,4 @@
+"gouttelette.activeCount" = "Active droplets: %d";
+"gouttelette.removeAll" = "Remove all droplets";
+"gouttelette.settings" = "Settings…";
+"gouttelette.launchAtLogin" = "Launch at login";
